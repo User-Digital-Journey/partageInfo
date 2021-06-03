@@ -1,0 +1,232 @@
+/**
+* @name common-theme-helpline.less
+* @desc less file for helpline theme styles
+*/
+/* Convert to CSS using online tools such as http://less2css.org/ */
+/* Color Palette */
+/*
+	HelpLine Theme Color Overrides
+*/
+.cx-widget.cx-theme-helpline {
+  color: #000000;
+  background-color: #fcfeff;
+  scrollbar-face-color: #A3A8AE;
+  scrollbar-track-color: #212529;
+  scrollbar-arrow-color: #A3A8AE;
+  /* WCAG: Non-text contrast for ui components - state changes to focus and hover */
+}
+.cx-widget.cx-theme-helpline .cx-theme {
+  background-color: #fcfeff;
+  color: #000000;
+  border-color: #222529 !important;
+}
+.cx-widget.cx-theme-helpline .cx-overlay {
+  background-color: #fcfeff;
+}
+.cx-widget.cx-theme-helpline .cx-svg-icon-tone1 {
+  fill: #4eb2ed;
+  height: 10px;
+}
+.cx-widget.cx-theme-helpline .cx-svg-icon-tone2 {
+  fill: #8C8C8C;
+}
+.cx-widget.cx-theme-helpline .cx-svg-icon-shadow1 {
+  fill: #000000;
+  opacity: 0.2;
+}
+.cx-widget.cx-theme-helpline .cx-svg-icon-shadow2 {
+  fill: #000000;
+  opacity: 0.1;
+}
+.cx-widget.cx-theme-helpline * {
+  border-color: #222529;
+}
+.cx-widget.cx-theme-helpline .cx-titlebar .cx-title {
+  color: #000000;
+}
+.cx-widget.cx-theme-helpline .cx-buttons-window-control .cx-svg-icon-tone1 {
+  fill: #98A7B8;
+}
+.cx-widget.cx-theme-helpline .cx-input-icon-overlay .cx-svg-icon-tone1 {
+  fill: #98A7B8;
+}
+.cx-widget.cx-theme-helpline label {
+  color: #000000;
+}
+.cx-widget.cx-theme-helpline a {
+  color: #FDFDFD;
+}
+.cx-widget.cx-theme-helpline a:hover {
+  color: #000000;
+}
+.cx-widget.cx-theme-helpline .cx-bubble .cx-message.cx-them {
+  background-color: #d8e9f4;
+}
+.cx-widget.cx-theme-helpline .cx-you .cx-bubble {
+  background-color: #4eb2ed;
+}
+.cx-widget.cx-theme-helpline .cx-you .cx-bubble-arrow {
+  fill: #4eb2ed;
+}
+.cx-widget.cx-theme-helpline .cx-them .cx-bubble {
+  background-color: #a4a4ac;
+}
+.cx-widget.cx-theme-helpline .cx-them .cx-bubble-arrow {
+  fill: #a4a4ac;
+}
+.cx-widget.cx-theme-helpline .cx-webchat .cx-transcript .cx-message .cx-name {
+  color: #000000;
+}
+.cx-widget.cx-theme-helpline .cx-webchat .cx-transcript .cx-message.cx-them {
+  color: #000000;
+}
+.cx-widget.cx-theme-helpline .cx-webchat .cx-transcript .cx-message.cx-you {
+  color: #000000;
+}
+.cx-widget.cx-theme-helpline .cx-icon-alert-circle {
+  color: #F53131;
+}
+.cx-widget.cx-theme-helpline .cx-footer,
+.cx-widget.cx-theme-helpline .cx-branding {
+  color: #98A7B8;
+}
+.cx-widget.cx-theme-helpline .cx-footer *,
+.cx-widget.cx-theme-helpline .cx-branding * {
+  fill: #98A7B8;
+}
+.cx-widget.cx-theme-helpline .cx-form-control {
+  background-color: #d8e9f4;
+  color: #000000;
+}
+.cx-widget.cx-theme-helpline .cx-form-control.cx-error {
+  border-color: #F53131 !important;
+}
+.cx-widget.cx-theme-helpline .cx-form-control::placeholder {
+  color: #505455;
+}
+.cx-widget.cx-theme-helpline .cx-form-control:-moz-placeholder {
+  color: #505455;
+}
+.cx-widget.cx-theme-helpline .cx-form-control::-moz-placeholder {
+  color: #505455;
+}
+.cx-widget.cx-theme-helpline .cx-form-control:-ms-input-placeholder {
+  color: #505455;
+}
+.cx-widget.cx-theme-helpline .cx-form-control::-webkit-input-placeholder {
+  color: #505455;
+}
+.cx-widget.cx-theme-helpline input:focus,
+.cx-widget.cx-theme-helpline textarea:focus,
+.cx-widget.cx-theme-helpline .cx-btn:focus,
+.cx-widget.cx-theme-helpline .cx-button-group button:focus,
+.cx-widget.cx-theme-helpline .cx-form-control:not(.cx-error):focus {
+  border-color: #75A8FF !important;
+}
+.cx-widget.cx-theme-helpline input,
+.cx-widget.cx-theme-helpline select,
+.cx-widget.cx-theme-helpline textarea {
+  background-color: #d8e9f4;
+  color: #000000;
+  border-color: #758384;
+}
+.cx-widget.cx-theme-helpline .cx-btn-default {
+  background: none;
+  border-color: #222529 !important;
+  color: #FDFDFD;
+  background-color: #505455;
+}
+.cx-widget.cx-theme-helpline .cx-btn.cx-disabled {
+  background: #CCCCCC;
+}
+.cx-widget.cx-theme-helpline .cx-btn-primary {
+  color: #FDFDFD;
+  border-color: #4eb2ed !important;
+  background: #4eb2ed;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #4eb2ed 0%, #4eb2ed 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #4eb2ed 0%, #4eb2ed 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #4eb2ed 0%, #4eb2ed 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@bg_color_4', endColorstr='@bg_color_5', GradientType=0);
+  /* IE6-9 */
+}
+.cx-widget.cx-theme-helpline .cx-button-group .cx-btn-primary:focus,
+.cx-widget.cx-theme-helpline .cx-btn-primary:focus {
+  border-color: #DAE6FC !important;
+}
+.cx-widget.cx-theme-helpline .cx-ac-dropdown-menu {
+  background: #fcfeff;
+  border-color: #222529 !important;
+}
+.cx-widget.cx-theme-helpline .cx-ac-suggestion:hover,
+.cx-widget.cx-theme-helpline .cx-ac-suggestion.cx-active {
+  background-color: #75A8FF;
+  color: #FDFDFD;
+}
+.cx-widget.cx-theme-helpline ::-webkit-scrollbar-thumb {
+  background: #A3A8AE;
+}
+.cx-widget.cx-theme-helpline .cx-smokescreen {
+  background-color: #fcfeff;
+  opacity: 0.7;
+}
+.cx-widget.cx-theme-helpline .cx-dialog-container .cx-dialog {
+  background-color: #fcfeff;
+  border-color: #222529 !important;
+}
+.cx-widget.cx-theme-helpline .cx-theme-background {
+  background-color: #fcfeff;
+}
+.cx-widget.cx-theme-helpline .cx-theme-border {
+  border: 1px solid #222529 !important;
+}
+.cx-widget.cx-theme-helpline .cx-theme-text {
+  color: #000000;
+}
+.cx-widget.cx-theme-helpline .cx-theme-icon-interactive1 svg .cx-svg-icon-tone1 {
+  fill: #5081E1;
+}
+.cx-widget.cx-theme-helpline .cx-theme-icon-positive svg .cx-svg-icon-tone1 {
+  fill: #4AC764;
+}
+.cx-widget.cx-theme-helpline .cx-theme-icon-negative svg .cx-svg-icon-tone1 {
+  fill: #F53131;
+}
+.cx-widget.cx-theme-helpline .cx-theme-icon-warning svg .cx-svg-icon-tone1 {
+  fill: #F8A740;
+}
+.cx-widget.cx-theme-helpline .cx-warning {
+  color: #F53131 !important;
+}
+.cx-widget.cx-theme-helpline .cx-warning .cx-icon svg * {
+  fill: #F53131 !important;
+}
+.cx-widget.cx-theme-helpline .cx-countdown {
+  color: #000000;
+}
+.cx-widget.cx-theme-helpline .cx-countdown .cx-icon svg * {
+  fill: #000000;
+}
+.cx-widget.cx-theme-helpline .cx-side-button-group {
+  background-color: #fcfeff;
+}
+.cx-widget.cx-theme-helpline .cx-side-button {
+  font-size: 4.5em;
+  background-color: #fcfeff;
+  box-shadow: none;
+  width: auto !important;
+  color: #000000;
+  padding: 10px;
+}
+.cx-widget.cx-theme-helpline .cx-webchat .cx-form svg {
+  width: 2em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+.cx-widget.cx-theme-helpline .cx-webchat .cx-alert .cx-wrapper {
+  background-color: #fcfeff !important;
+  border-color: #758384;
+}

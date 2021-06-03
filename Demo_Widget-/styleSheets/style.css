@@ -1,0 +1,68 @@
+﻿html{
+    height: 100%;
+}
+
+body {
+    background-image: url("../img/ca.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+    background-position: center;
+}
+
+#pageDiv {
+    display : flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media screen and (orientation: portrait) {
+    #logoDiv {
+        height: 25%;
+        text-align: center;
+    }
+
+    #imgLogo {
+        width: 50%;
+        position: fixed;
+    }
+
+    #buttonDiv {
+        height: 35%;
+    }
+
+    #titleDiv {
+        height: 40%;
+    }
+
+    #imgTitle {
+        width: 60%;
+        margin-left: 3%;
+        position: fixed
+    }
+}
+
+#logoDiv {
+    height: 25%;
+    text-align: center;
+    margin-left: 15%;
+}
+
+#imgLogo {
+    width : 35%;
+    position:fixed;
+}
+
+#buttonDiv {
+    height: 35%;
+}
+
+#titleDiv {
+    height: 40%;
+}
+
+#imgTitle {
+    width: 45%;
+    margin-left : 3%;
+    position: fixed
+}

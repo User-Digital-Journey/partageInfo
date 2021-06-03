@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="styleSheets/widgetStyle.css" rel="stylesheet"/>
+    <link href="styleSheets/style.css" rel="stylesheet"/>
+    <title>CA</title>
+</head>
+
+<body>
+<div id="pageDiv">
+    <div id="buttonDiv">
+        <script src="https://apps.mypurecloud.de/widgets/9.0/cxbus.min.js"
+                onload="javascript:CXBus.configure({debug:false,pluginsPath:'https://apps.mypurecloud.de/widgets/9.0/plugins/'}); CXBus.loadPlugin('widgets-core');"></script>
+        <script type="text/javascript" src="queueConfigurator.js"></script>
+        <script type="text/javascript" src="widget.js"></script>
+        <script type="text/javascript">
+            function getAdvancedConfig() {
+                return {
+                    form: {
+                        autoSubmit: false,
+                        email: '-'
+                    }
+                };
+            }
+        </script>
+    </div>
+</div>
+</body>
+</html>

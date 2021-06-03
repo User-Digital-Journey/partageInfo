@@ -1,0 +1,334 @@
+﻿/**
+* @name common-theme-helpline.less
+* @desc less file for helpline theme styles
+*/
+
+/* Convert to CSS using online tools such as http://less2css.org/ */
+
+
+/* Color Palette */
+
+@bg_color_1: #fcfeff; // Main Background Color     //#04081e
+@bg_color_2: #d8e9f4; // Form Inputs
+@bg_color_3: #505455; // Button default
+@bg_color_4: #4eb2ed; // Button primary gradient 1
+@bg_color_5: #4eb2ed; // Button primary gradient 2
+@bg_color_6: #CCCCCC; // Button disabled
+@bg_color_7: #212529; // Native scrollbar track color
+@bg_color_8: #A3A8AE; // Scrollbar color
+
+@txt_color_1: #000000; // Main text color
+@txt_color_2: #98A7B8; // footer text
+@txt_color_3: #FDFDFD; // Button default & primary / autocomplete text hover color
+@txt_color_4: #FDFDFD; // Hyperlink color
+@txt_color_5: #505455; // Placeholder color
+@txt_color_6: #F53131; // Alert/error color
+
+@icon_color_1: #4eb2ed; // Base icon color
+@icon_color_2: #8C8C8C; // Secondary icon color (multitone only)
+@icon_color_3: #000000; // Icon shadow color (multitone only)
+@icon_color_4: #000000; // Icon secondary shadow color (multitone only)
+@icon_color_5: #98A7B8; // Window control icon color
+@icon_color_6: #98A7B8; // Form input icon overlay color (e.g. "clear" icon)
+@icon_color_7: #5081E1; // Interactive icon color 1 (attach files, delete file, etc)
+@icon_color_8: #4AC764; // Positive Color (confirmation, availability, usually green)
+@icon_color_9: #F53131; // Negative Color (error, exception, usually red)
+@icon_color_10: #F8A740; // Warning Color (warning, pending, offline, usually yellow or orange)
+@icon_color_11: #FDFDFD; // Icon color for primary buttons
+
+@border_color_1: #222529; // Main border color
+@border_color_2: #4eb2ed; // Button primary
+@border_color_3: transparent; // Button default
+@border_color_4: transparent; // Button disabled
+@border_color_5: #F53131; // Alert/error color
+@border_color_6: #758384; // Form controls default state
+
+@outline_color_1: #75A8FF; // Form input focus outline / autocomplete hover background color
+@outline_color_2: #DAE6FC; // Outline color for primary buttons
+
+@bubble_color_you: #4eb2ed;
+@bubble_color_them: #a4a4ac;
+
+//@sid_button_backgroung : #000000; //Backgroung of the side button
+/*
+	HelpLine Theme Color Overrides
+*/
+.cx-widget.cx-theme-helpline {
+    color: @txt_color_1;
+    background-color: @bg_color_1;
+    scrollbar-face-color: @bg_color_8;
+    scrollbar-track-color: @bg_color_7;
+    scrollbar-arrow-color: @bg_color_8;
+
+    .cx-theme {
+        background-color: @bg_color_1;
+        color: @txt_color_1;
+        border-color: @border_color_1 !important;
+    }
+
+    .cx-overlay {
+        background-color: @bg_color_1;
+    }
+
+    .cx-svg-icon-tone1 {
+        fill: @icon_color_1;
+        height: 10px;
+    }
+
+    .cx-svg-icon-tone2 {
+        fill: @icon_color_2;
+    }
+
+    .cx-svg-icon-shadow1 {
+        fill: @icon_color_3;
+        opacity: 0.2;
+    }
+
+    .cx-svg-icon-shadow2 {
+        fill: @icon_color_4;
+        opacity: 0.1;
+    }
+
+    * {
+        border-color: @border_color_1;
+    }
+
+    .cx-titlebar .cx-title {
+        color: @txt_color_1;
+    }
+
+    .cx-buttons-window-control .cx-svg-icon-tone1 {
+        fill: @icon_color_5;
+    }
+
+    .cx-input-icon-overlay .cx-svg-icon-tone1 {
+        fill: @icon_color_6;
+    }
+    label {
+        color: @txt_color_1;
+    }
+
+    a {
+        color: @txt_color_4;
+    }
+
+    a:hover {
+        color: @txt_color_1;
+    }
+
+    .cx-bubble .cx-message.cx-them {
+        background-color: @bg_color_2;
+    }
+
+    .cx-you .cx-bubble {
+        background-color: @bubble_color_you;
+    }
+
+    .cx-you .cx-bubble-arrow {
+        fill: @bubble_color_you;
+    }
+
+    .cx-them .cx-bubble {
+        background-color: @bubble_color_them;
+    }
+
+    .cx-them .cx-bubble-arrow {
+        fill: @bubble_color_them;
+    }
+
+    .cx-webchat .cx-transcript .cx-message .cx-name {
+        color: @txt_color_1;
+    }
+
+    .cx-webchat .cx-transcript .cx-message.cx-them {
+        color: @txt_color_1;
+    }
+
+    .cx-webchat .cx-transcript .cx-message.cx-you {
+        color: @txt_color_1;
+    }
+
+    .cx-dropdown {
+    }
+
+    .cx-icon-alert-circle {
+        color: @txt_color_6;
+    }
+
+    .cx-footer, .cx-branding {
+        color: @txt_color_2;
+
+        * {
+            fill: @txt_color_2;
+        }
+    }
+
+    .cx-form-control {
+        background-color: @bg_color_2;
+        color: @txt_color_1;
+    }
+
+    .cx-form-control.cx-error {
+        border-color: @border_color_5 !important
+    }
+
+    .cx-form-control::placeholder {
+        color: @txt_color_5
+    }
+
+    .cx-form-control:-moz-placeholder {
+        color: @txt_color_5
+    }
+
+    .cx-form-control::-moz-placeholder {
+        color: @txt_color_5
+    }
+
+    .cx-form-control:-ms-input-placeholder {
+        color: @txt_color_5
+    }
+
+    .cx-form-control::-webkit-input-placeholder {
+        color: @txt_color_5
+    }
+
+    input:focus,
+    textarea:focus,
+    .cx-btn:focus,
+    .cx-button-group button:focus,
+    .cx-form-control:not(.cx-error):focus { // let error input fields contain the error border even on focus.
+        border-color: @outline_color_1 !important;
+    }
+
+    input,
+    select,
+    textarea {
+        background-color: @bg_color_2;
+        color: @txt_color_1;
+        border-color: @border_color_6;
+    }
+
+    .cx-btn-default {
+        background: none;
+        border-color: @border_color_1 !important;
+        color: @txt_color_3;
+        background-color: @bg_color_3;
+    }
+
+    .cx-btn.cx-disabled {
+        background: @bg_color_6;
+    }
+
+    .cx-btn-primary {
+        color: @txt_color_3;
+        border-color: @border_color_2 !important;
+        background: @bg_color_4; /* Old browsers */
+        background: -moz-linear-gradient(top, @bg_color_4 0%, @bg_color_5 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, @bg_color_4 0%,@bg_color_5 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, @bg_color_4 0%,@bg_color_5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@bg_color_4', endColorstr='@bg_color_5',GradientType=0 ); /* IE6-9 */
+    }
+    /* WCAG: Non-text contrast for ui components - state changes to focus and hover */
+    .cx-button-group .cx-btn-primary:focus, .cx-btn-primary:focus {
+        border-color: @outline_color_2 !important;
+    }
+
+    .cx-ac-dropdown-menu {
+        background: @bg_color_1;
+        border-color: @border_color_1 !important
+    }
+
+    .cx-ac-suggestion:hover,
+    .cx-ac-suggestion.cx-active {
+        background-color: @outline_color_1;
+        color: @txt_color_3;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: @bg_color_8;
+    }
+
+    .cx-smokescreen {
+        background-color: @bg_color_1;
+        opacity: 0.7;
+    }
+
+    .cx-dialog-container {
+
+        .cx-dialog {
+            background-color: @bg_color_1;
+            border-color: @border_color_1 !important;
+        }
+    }
+
+    .cx-theme-background {
+        background-color: @bg_color_1;
+    }
+
+    .cx-theme-border {
+        border: 1px solid @border_color_1 !important;
+    }
+
+    .cx-theme-text {
+        color: @txt_color_1;
+    }
+
+    .cx-theme-icon-interactive1 svg .cx-svg-icon-tone1 {
+        fill: @icon_color_7;
+    }
+
+    .cx-theme-icon-positive svg .cx-svg-icon-tone1 {
+        fill: @icon_color_8;
+    }
+
+    .cx-theme-icon-negative svg .cx-svg-icon-tone1 {
+        fill: @icon_color_9;
+    }
+
+    .cx-theme-icon-warning svg .cx-svg-icon-tone1 {
+        fill: @icon_color_10;
+    }
+
+    .cx-warning {
+        color: @txt_color_6 !important;
+
+        .cx-icon svg * {
+            fill: @txt_color_6 !important
+        }
+    }
+
+    .cx-countdown {
+        color: @txt_color_1;
+
+        .cx-icon svg * {
+            fill: @txt_color_1;
+        }
+    }
+
+    .cx-side-button-group {
+        background-color: @bg_color_1;
+    }
+
+    .cx-side-button {
+        font-size: 4.5em;
+        background-color: @bg_color_1;
+        box-shadow: none;
+        width: auto !important;
+        color: @txt_color_1;
+        padding: 10px;
+    }
+
+    .cx-side-button-group .cx-side-button {
+    }
+
+    .cx-webchat .cx-form svg {
+        width: 2em;
+        margin-right: 0.5em;
+        vertical-align: middle;
+    }
+
+    .cx-webchat .cx-alert .cx-wrapper {
+        background-color: @bg_color_1 !important;
+        border-color: @border_color_6;
+    }
+}
